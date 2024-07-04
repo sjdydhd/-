@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>红色景点</title>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;display: flex;justify-content: center; /* 添加背景图片 */  
+            background-image: url('./images/hongse.png'), url('./images/hongse.png');  
+            background-repeat: no-repeat;  
+            background-position: left, right; /* 分别设置左右两侧的图片位置 */ background-size: auto 100%; 
+            background-color: rgba(255,255,255,0.5);     
+        }
+        header{ background-color: rgba(255,255,255,0.5);padding:15px;text-align: center;font-size: 35px;color: black;}
+        nav{float: left;width: 220px;height: 228px; background-color: rgba(255,255,255,0.5);padding: 15px;}
+        nav ul{list-style:disc;padding: 0%;}
+        article{float:initial;padding:30px;width:600px; background-color: rgba(255,255,255,0.5);height: auto;}
+        section::after{content: "";display: table;clear: both;}
+    </style>
+</head>
+<body>
+    <header>红色景点</header>
+    <section>
+        <nav>
+            <ul><li id="longde-link">隆德境六盘山红军长征景区</li></ul>
+            <ul><li id="hongjun-link">红军西征纪念园</li></ul>
+            <ul><li id="liupan-link">六盘山红军长征纪念亭</li></ul>
+            <ul><li id="shanhe-link">任山河烈士陵园</li></ul>
+            <ul><li id="yanchi-link">盐池革命烈士纪念园</li></ul>
+        </nav>
+        <article id="longde-link">
+            <h1>隆德境六盘山红军长征景区</h1>
+            <p>六盘山红军长征景区，位于宁夏固原市隆德县东侧，312国道沿线，是国家AAAA级旅游景区。</p>
+            <p>六盘山是中国工农红军长征翻越的最后一座大山，六盘山地区是中国工农红军长征三军会师地之一，</p>
+            <p>是革命老区，也是国家确定的一百个经典红色景区之一。六盘山红军长征景区由纪念馆、纪念碑、</p>
+            <p>纪念广场、纪念亭、吟诗台和红军小道六部分组成，红军小道沿途十八个微缩景观，</p>  
+            <p>再现了红军长征途中所发生的重大历史事件。2005年11月20日被中共中央宣传部确定为第三批</p>
+            <p>“全国爱国主义教育示范基地”；2006年5月被共青团中央确定为“全国青少年教育基地”；</p>    
+            <p>2010年1月被国家国防教育办公室命名为首批国防教育示范基地。</p>  
+            <p> 2013年，固原市委、政府按照自治区“把六盘山旅游扶贫试验区打</p>   
+            <p> 造成‘旅游特区’与‘国家级旅游扶贫示范区’”的要求，整合旅游资源，</p>   
+            <p>将原六盘山红军长征纪念馆更名为“六盘山红军长征景区”</p>     
+        </article>
+        <article id="hongjun-link">
+            <h1>红军西征纪念园</h1>
+            <p> 位于宁夏中部的同心县县城，总占地面积为323亩，</p>  
+            <p>在2006年正式建成，主要是为了纪念红军长征胜利和</p>
+            <p>陕甘宁省豫海县回民自治政府成立七十周年，是全国百家红色经典景区之一 。</p> 
+        </article>
+        <article id="liupan-link">
+            <h1>六盘山红军长征纪念亭</h1>
+            <p> 在1935年的时候，在毛泽东的率领下，</p>
+            <p>红军成功翻越六盘山，从而打开了通往陕北革命根据地的最后一个称号，</p>
+            <p>因此建造而成的纪念亭。</p>
+        </article>
+        <article id="shanhe-link">
+            <h1>任山河烈士陵园</h1>
+            <p>任山河烈士陵园是彭阳县城全区内最大规模的一个陵园，</p>
+            <p>任山河战斗是西北解放战争中最为激烈的一场斗争，</p>
+            <p>解放宁夏的第一场战役就在此地打响。任山河烈士陵园内安葬着391名烈士，</p>
+            <p>其中包括158名无名烈士，中国人民解放军第19兵团64军364名指战员都在任山河战斗中壮烈牺牲。</p>
+        </article>
+        <article id="yanchi-link">
+            <h1>盐池革命烈士纪念园</h1>
+            <p>盐池革命烈士纪念园是全国一百个红色旅游经典景区之一，</p>
+            <p>也是宁夏地区爱国主义教育基地，是宁夏国防教育基地。</p>
+            <p>盐池革命烈士纪念园位于花马寺国家森林公园内，总占地面积超过四百亩，总投资金额高达两千多万。</p>
+        </article>
+    </section>
+    <script>  
+        document.addEventListener('DOMContentLoaded', function() {  
+            var navLinks = document.querySelectorAll('nav ul li');  
+            var articles = document.querySelectorAll('article');  
+            var currentArticle = null;  
+              
+            // 为导航链接添加点击事件监听器  
+            navLinks.forEach(function(link) {  
+                link.addEventListener('click', function(event) {  
+                    event.preventDefault(); // 阻止默认的点击事件行为  
+                    var targetId = this.getAttribute('data-target'); // 获取目标文章的ID  
+                    var targetArticle = document.getElementById(targetId); // 获取目标文章元素对象  
+                      
+                    // 隐藏当前文章并显示目标文章  
+                    if (currentArticle) {  
+                        currentArticle.classList.add('hidden');  
+                    }  
+                    if (targetArticle) {  
+                        targetArticle.classList.remove('hidden');  
+                        currentArticle = targetArticle;  
+                    } else {  
+                        console.log('找不到对应的文章内容。');  
+                    }  
+                      
+                    // 滚动到目标文章位置  
+                    window.location.hash = '#' + targetId;  
+                });  
+            });  
+              
+            // 监听地址栏变化事件，用于当用户直接输入带锚点的URL时滚动到对应位置  
+            window.addEventListener('hashchange', function() {  
+                var hash = window.location.hash; // 获取锚点值（例如：#longde-link）  
+                var targetArticle = document.querySelector(hash); // 根据锚点值获取对应的文章元素对象（例如：<article id="longde-link">）  
+                if (targetArticle) {  
+                    targetArticle.scrollIntoView({ behavior: 'smooth' }); // 滚动到目标文章位置（平滑滚动）  
+                } else {  
+                    console.log('找不到对应的文章内容。');  
+                }  
+            });  
+        });  
+    </script>
+</body>
+</html>

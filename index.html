@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>西吉县旅游局</title>
+<meta name="keywords" content="西吉县旅游局 " />
+<meta name="description" content="西吉县旅游局 " />
+<link href="css/whir_css.css" rel="stylesheet" type="text/css">
+<link href="css/tousu.html" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="script/jquery.js"></script>
+<script type="text/javascript" src="script/superslide.2.1.js"></script>
+<script type="text/javascript" src="script/column.js"></script>
+<script type="text/javascript" src="script/min_contentslider.js"></script>
+</head>
+<body>
+<!--header-->
+<div id="header">
+  <div class="top">
+    <div class="time">
+      <script language=JavaScript>
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = " 星期日"
+if(today.getDay()==1) day = " 星期一"
+if(today.getDay()==2) day = " 星期二"
+if(today.getDay()==3) day = " 星期三"
+if(today.getDay()==4) day = " 星期四"
+if(today.getDay()==5) day = " 星期五"
+if(today.getDay()==6) day = " 星期六"
+document.fgColor = "000000";
+date = "今天是:" + (today.getFullYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日" + day +"";
+document.write(date);
+// -->
+</script>
+    </div>
+    <div class="weather">
+      <a href="http://www.weather.com.cn/weather/101170402.shtml" target="_blank">西吉天气查询</a>
+    </div>
+    <div class="tnav"><a href="login.html">登录</a>|<a href="register.html">注册</a></div>
+  </div>
+  <div class="nav">
+    <div class="navmenu">
+      <div class="logo"><a href="index.html"><img src="images/logo.jpg" width="190" height="70" /></a></div>
+      <ul>
+        <li><a href="西吉概况.html">西吉概况</a></li>
+        <li><a href="资讯信息.html"  class="on">资讯信息</a></li>      
+        <li><a href="畅游服务.html">畅游西吉</a></li>
+        <li><a href="san.html">旅游攻略</a></li>
+        <li><a href="ship2.html">视频欣赏</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="clear"></div>
+<div class="fullSlide">
+  <div class="bd">
+    <ul>
+      <li _src="url(images/banner.jpg)" style="background:#E2025E center 0 no-repeat;"><a target="_blank" href="#"></a></li>
+      <li _src="url(images/banner1.jpg)" style="background:#DED5A1 center 0 no-repeat;"><a target="_blank" href="#"></a></li>
+      <li _src="url(images/banner2.jpg)" style="background:#B8CED1 center 0 no-repeat;"><a target="_blank" href="#"></a></li>
+      <li _src="url(images/banner3.jpg)" style="background:#98918E center 0 no-repeat;"><a target="_blank" href="#"></a></li>
+      <li _src="url(images/banner4.jpg)" style="background:#FEFF19 center 0 no-repeat;"><a target="_blank" href="#"></a></li>
+    </ul>
+  </div>
+  <div class="hd">
+    <ul>
+    </ul>
+  </div>
+  <span class="prev"></span> <span class="next"></span> </div>
+<script type="text/javascript">
+jQuery(".fullSlide").hover(function() {
+    jQuery(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
+},
+function() {
+    jQuery(this).find(".prev,.next").fadeOut()
+});
+jQuery(".fullSlide").slide({
+    titCell: ".hd ul",
+    mainCell: ".bd ul",
+    effect: "fold",
+    autoPlay: true,
+    autoPage: true,
+    trigger: "click",
+    startFun: function(i) {
+        var curLi = jQuery(".fullSlide .bd li").eq(i);
+        if ( !! curLi.attr("_src")) {
+            curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+        }
+    }
+});
+</script>
+<!--中间内容-->
+<div id="container">
+  <div class="con">
+    <!--精彩活动-->
+    <div class="active">
+      <div class="title">
+        <h1>精彩活动</h1>
+      </div>
+      <div class="picshow">
+	  <DIV class=syFocusThumb>
+          <DIV id=syFocusThumb class=sliderwrapper>
+            <DIV class=contentdiv>
+              <DIV class=dPic><A href="#" 
+target=_blank><IMG  src="images/2_1.jpg" width=419 
+height=319></A></DIV>
+            </DIV>
+            <DIV class=contentdiv>
+              <DIV class=dPic><A href="#" 
+target=_blank><IMG  src="images/60x200.jpg" 
+width=419 
+height=319></A></DIV>
+            </DIV>
+            <DIV class=contentdiv>
+              <DIV class=dPic><A href="#" 
+target=_blank><IMG  src="images/2_1.jpg" width=419 
+height=319></A></DIV>
+            </DIV>
+            <DIV class=contentdiv>
+              <DIV class=dPic><A href="#" 
+target=_blank><IMG  src="images/350-200_2.jpg" width=419 
+height=319></A></DIV>
+            </DIV>
+            <DIV class=contentdiv>
+              <DIV class=dPic><A 
+href="#" 
+target=_blank><IMG  src="images/emnb350.jpg" 
+width=419 
+height=319></A></DIV>
+            </DIV>
+          </DIV>
+          <DIV id=paginate-syFocusThumb class=pagination><I id=prev class=prev 
+title=上一幅></I>
+            <DIV class=thumbWrap>
+              <DIV class=holder><I class=toc><A 
+href="#" target=_blank><IMG  src="images/2_1.jpg" width=92 height=67></A></I> <I 
+class=toc><A href="#" 
+target=_blank><IMG src="images/60x200.jpg" 
+width=92 height=67></A></I> <I class=toc><A 
+href="#" target=_blank><IMG  src="images/2_1.jpg" width=92 height=67></A></I> <I 
+class=toc><A href="#" 
+target=_blank><IMG src="images/350-200_2.jpg" width=92 height=67></A></I> 
+
+ </DIV>
+            </DIV>
+            <I id=next class=next title=下一幅></I></DIV>
+          <SCRIPT type=text/javascript>
+//焦点图初始化
+featuredcontentslider.init({
+id: "syFocusThumb", //指定ID
+contentsource: ["inline", ""], //有效值: ["inline", ""] 嵌入html or ["ajax", "path_to_file"] 嵌入utf-8文件
+toc: "scroll", //有效值: "#increment" 标记序号, "markup", ["markup1", "markup2", etc]标记具体内容
+nextprev: ["", ""], //next_pre标记 ，如："上一条" "下一条"，设置为 "" 为不出现
+revealtype: "click", //鼠标事件有效值: “click” or “mouseover”
+enablefade: [false, 0.15], // 切换褪色度 “true”or “false”
+autorotate: [true, 3500], // 切换停留时间 “true”or “false”
+delay: 0, //事件延迟时间(默认值：0，单位：ms)
+//playtab: 4, 默认的播放舌签
+onChange: function(previndex, curindex){ //触发处理；previndex 触发处理上一个记录； curindex 触发处理上一个记录 可以自定义函数控制；参考亲子网首页“亲子部落-相册”
+}
+});
+</SCRIPT>
+        </DIV>
+	  </div>
+    </div>
+    <!--旅游资讯-->
+    <div class="zixun">
+      <div class="title">
+        <h1>旅游资讯</h1>
+      </div>
+      <ul class="list">
+        <li><a href="https://www.chinanews.com.cn/cul/2021/12-24/9636843.shtml">中国首个“文学之乡”宁夏西吉：让文学茁壮成长 开枝散叶</a></li>
+        <li><a href="http://travel.china.com.cn/txt/2021-07/06/content_77609488.html">宁夏：走进革命胜地·多彩西吉 遇见诗和远方</a></li>
+        <li><a href="http://www.qstheory.cn/laigao/ycjx/2022-06/03/c_1128710981.htm">老区新貌 | 宁夏西吉：红色热土上的好光景</a></li>
+        <li><a href="https://www.nxnews.net/zt/2020/2020wlt/wlxjx/mlxxjx/202012/t20201207_6955663.html">红色胜地，七彩西吉</a></li>
+        <li><a href="https://new.qq.com/rain/a/20211224A0CARB00">西吉文学为什么行？听听他们怎么说</a></li>
+        <li><a href="https://difang.gmw.cn/nx/2023-12/08/content_37016898.htm">宁夏西吉：农文旅体融合描绘乡村振兴新画卷</a></li>
+        <li><a href="https://www.msn.cn/zh-cn/news/other/%E5%AE%81%E5%A4%8F%E8%A5%BF%E5%90%89-%E4%B9%A1%E6%9D%91%E6%A2%AF%E7%94%B0-%E9%9D%93%E4%B8%BD%E5%90%8D%E7%89%87/ar-AA1kgh34">宁夏西吉：乡村梯田，靓丽名片</a></li>
+        <li><a href="http://news.cnr.cn/native/gd/20161026/t20161026_523223112.shtml">西吉：众志成城决战脱贫攻坚</a></li>
+        <li><a href="https://www.nxnews.net/ds/gydt/202101/t20210105_6991446.html">西吉：一颗马铃薯的成长之旅</a></li>
+        <li><a href="https://caijing.chinadaily.com.cn/a/202211/14/WS6371f838a3109bd995a4fe13.html">文旅神曲《西吉好东西》，唱响西吉物产美景</a></li>
+      </ul>
+      <ul class="list1">
+        <li class="li1"><a href="https://www.nxxj.gov.cn/xxgk_13648/bmxxgkml/201909/t20190924_1751406.html"><img src="images/pic1.jpg" /><span>小长假旅游接待情况</span></a></li>
+        <li class="li2"><a href="#"><img src="images/pic2.jpg" /><span>将台堡革命旧址</span></a></li>
+        <li class="li3"><a href="#"><img src="images/pic3.jpg" /><span>火山寨</span></a></li>
+      </ul>
+    </div>
+    <!--出行服务-->
+    <div class="cxfw">
+      <div class="title">
+        <h1>出行服务</h1>
+      </div>
+      <ul>
+        <li class="cx1"><a href="https://you.ctrip.com/sight/xiji1446188.html">旅游企业</a></li>
+        <li class="cx2"><a href="https://you.ctrip.com/sight/xiji1446188.html">景区名录</a></li>
+        <li class="cx3"><a href="https://you.ctrip.com/sight/xiji1446188.html">旅行社名录</a></li>
+        <li class="cx4"><a href="https://you.ctrip.com/sight/xiji1446188.html">酒店宾馆</a></li>
+        <li class="cx5"><a href="https://you.ctrip.com/sight/xiji1446188.html">星级农家乐</a></li>
+        <li class="cx6"><a href="ditu.html">西吉旅游地图</a></li>
+        <li class="cx7"><a href="tousu.html">投诉留言</a></li>
+        <li class="cx8"><a href="http://www.weather.com.cn/weather/101170402.shtml">天气预报</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--人文凤阳-->
+  <div class="con1">
+    <div class="culture">
+      <div class="rwfy">
+        <h1>人文西吉</h1>
+        <ul class="list2">
+          <li class="rw1"><a href="https://new.qq.com/rain/a/20220603A04BTH00">西吉新貌</a></li>
+          <li class="rw2"><a href="https://www.nxxj.gov.cn/xxgk_13648/zfxxgkml/zcjd/202201/t20220116_3284949.html#:~:text=%E4%B8%BA%E5%8A%A0%E5%BF%AB%E6%8E%A8%E8%BF%9B%E9%BB%84%E6%B2%B3%E6%B5%81%E5%9F%9F%E7%94%9F%E6%80%81%E4%BF%9D%E6%8A%A4%E5%92%8C%E9%AB%98%E8%B4%A8%E9%87%8F%E5%8F%91%E5%B1%95%E5%85%88%E8%A1%8C%E5%8C%BA%E5%BB%BA%E8%AE%BE%2C%E8%81%9A%E7%84%A6%E9%87%8D%E7%82%B9%E4%BB%BB%E5%8A%A1%E8%90%BD%E5%AE%9E%2C%E6%88%91%E5%8E%BF%E8%AE%BA%E8%AF%81%E6%8F%90%E5%87%BA%E4%BA%86S45%E4%B8%AD%E5%8D%AB%E8%87%B3%E9%9D%99%E5%AE%81%E9%AB%98%E9%80%9F%E5%85%AC%E8%B7%AF,%28%E8%A5%BF%E5%90%89%E6%AE%B5%29%E3%80%81%E5%9B%BA%E6%B5%B7%E6%89%A9%E7%81%8C%E6%89%AC%E6%B0%B4%E6%9B%B4%E6%96%B0%E6%94%B9%E9%80%A0%E5%B7%A5%E7%A8%8B%20%28%E8%A5%BF%E5%90%89%E5%BB%B6%E4%BC%B8%E4%BE%9B%E6%B0%B4%E5%B7%A5%E7%A8%8B%29%E3%80%81%E4%BA%92%E8%81%94%E7%BD%91%2B%E5%9F%8E%E4%B9%A1%E4%BE%9B%E6%B0%B4%E5%B7%A5%E7%A8%8B%E3%80%81%E8%91%AB%E8%8A%A6%E6%B2%B3%E4%B8%AD%E5%9E%8B%E7%81%8C%E5%8C%BA%E9%85%8D%E5%A5%97%E8%8A%82%E6%B0%B4%E6%94%B9%E9%80%A0%E5%B7%A5%E7%A8%8B%E3%80%81%E6%9C%88%E4%BA%AE%E5%B1%B1%E6%B0%B4%E6%BA%90%E6%B6%B5%E5%85%BB%E6%9E%97%E5%BB%BA%E8%AE%BE%E3%80%81%E6%96%B0%E5%BB%BA%E8%A5%BF%E5%90%89%E4%B8%80%E4%B8%AD%E3%80%81%E5%8E%BF%E4%BA%BA%E6%B0%91%E5%8C%BB%E9%99%A2%E4%B8%89%E7%BA%A7%E4%B9%99%E7%AD%89%E5%8C%BB%E9%99%A2%E5%BB%BA%E8%AE%BE%E9%A1%B9%E7%9B%AE%E3%80%81%E7%99%BE%E4%B8%87%E4%BA%A9%E9%AB%98%E6%A0%87%E5%87%86%E5%86%9C%E7%94%B0%E5%BB%BA%E8%AE%BE%E3%80%81%E5%8E%BF%E5%9F%8E%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E5%BB%BA%E8%AE%BE%E3%80%81%E6%99%BA%E6%85%A7%E8%A5%BF%E5%90%89%E5%BB%BA%E8%AE%BE%E2%80%9C%E5%8D%81%E5%A4%A7%E5%B7%A5%E7%A8%8B%E2%80%9D%2C%E5%88%87%E5%AE%9E%E5%8F%91%E6%8C%A5%E9%87%8D%E7%82%B9%E9%A1%B9%E7%9B%AE%E6%8A%95%E8%B5%84%E5%B8%A6%E5%8A%A8%E4%BD%9C%E7%94%A8%2C%E5%8A%A0%E5%BF%AB%E5%9F%B9%E8%82%B2%E5%8F%91%E5%B1%95%E6%96%B0%E5%8A%A8%E8%83%BD%2C%E4%B8%BA%E5%85%88%E8%A1%8C%E5%8C%BA%E5%BB%BA%E8%AE%BE%E5%A5%A0%E5%AE%9A%E5%9D%9A%E5%AE%9E%E5%9F%BA%E7%A1%80%E3%80%82">改革之乡</a></li>
+          <li class="rw1"><a href="https://cn.bing.com/images/search?q=%e8%a5%bf%e5%90%89%e6%b0%91%e9%a3%8e&qpvt=%e8%a5%bf%e5%90%89%e6%b0%91%e9%a3%8e&form=IGRE&first=1">民风民俗</a></li>
+          <li class="rw2"><a href="https://www.nxnews.net/zt/2020/swlsypcxf/wztt/202012/t20201207_6956924.html">红色胜地</a></li>
+           
+      
+          
+        </ul>
+      </div>
+      <!--凤阳概况-->
+      <div class="fygk">
+        <div class="xiang">
+          <div class="column">
+            <div class="title1"><a href="hongse.html">更多></a>
+              <h1>红色革命点</h1>
+            </div>
+            <div class="xcon">
+              <div class="ximg"><img src="images/dwzx.jpg" width="118" height="78" /></div>
+              <ul>
+                <li>隆德境六盘山红军长征景区</li>
+                <li>红军西征纪念园</li>
+                <li>六盘山红军长征纪念亭</li>
+                <li>任山河烈士陵园</li>
+              </ul>
+            </div>
+          </div>
+           
+       
+            
+          </div>
+        </div>
+        
+        <!--凤阳新貌-->
+       
+      </div>
+    </div>
+  </div>
+  <!--畅游凤阳-->
+  
+  <!--主题线路-->
+  
+  <!--玩转凤阳-->
+  <!--旅游攻略-->
+ 
+ 
+<!--底部-->
+<div id="footer">
+<div class="links">
+    <!--下面是向左滚动代码-->
+    <div id="colee_left" style="overflow:hidden;width:1200px; padding:0px;">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td id="colee_left1" valign="top"><table cellpadding="2" cellspacing="0" border="0">
+              <tr>
+                <td class="td1"><a href="#" target="_blank"><img src="images/link1.jpg" width="135" height="42" /></a></td>
+                <td class="td1"><a href="#" target="_blank"><img src="images/link2.jpg" width="135" height="42" /></a></td>
+				<td class="td1"><a href="#" target="_blank"><img src="images/link3.jpg" width="135" height="42" /></a></td>
+				<td class="td1"><a href="#" target="_blank"><img src="images/link4.jpg" width="135" height="42" /></a></td>
+				<td class="td1"><a href="#" target="_blank"><img src="images/link5.jpg" width="135" height="42" /></a></td>
+				<td class="td1"><a href="#" target="_blank"><img src="images/link6.jpg" width="135" height="42" /></a></td>
+				<td class="td1"><a href="#" target="_blank"><img src="images/link7.jpg" width="135" height="42" /></a></td>
+				<td class="td1"><a href="#" target="_blank"><img src="images/link8.jpg" width="135" height="42" /></a></td>
+              </tr>
+            </table></td>
+          <td id="colee_left2" valign="top"></td>
+        </tr>
+      </table>
+    </div>
+    <script>
+//使用div时，请保证colee_left2与colee_left1是在同一行上.
+var speed=48//速度数值越大速度越慢
+var colee_left2=document.getElementById("colee_left2");
+var colee_left1=document.getElementById("colee_left1");
+var colee_left=document.getElementById("colee_left");
+colee_left2.innerHTML=colee_left1.innerHTML
+function Marquee3(){
+if(colee_left2.offsetWidth-colee_left.scrollLeft<=0)//offsetWidth 是对象的可见宽度
+colee_left.scrollLeft-=colee_left1.offsetWidth//scrollWidth 是对象的实际内容的宽，不包边线宽度
+else{
+colee_left.scrollLeft++
+}
+}
+var MyMar3=setInterval(Marquee3,speed)
+colee_left.onmouseover=function() {clearInterval(MyMar3)}
+colee_left.onmouseout=function() {MyMar3=setInterval(Marquee3,speed)}
+</script>
+    <!--向左滚动代码结束-->
+  </div>
+  <div class="fnav"><a href="#">关于我们</a>|<a href="#">免责条款</a>|<a href="#">加入收藏</a>|<a href="#">设为首页</a></div>
+  <div class="copyright">版权所有：西吉县旅游局 电话：0000-0000000 地址：西吉县东华路000号 邮编：000000 邮箱：xxxxx@xxx.com<br />
+    皖ICP备00000000号 <a href="http://www.cssmoban.com/" target="_blank"></a></div>
+</div>
+</body>
+</html>
